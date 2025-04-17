@@ -35,7 +35,15 @@ In this project, we propose a **deep learning-based system** to **automatically 
 - Classify the condition into stages (e.g., normal, mild, moderate, severe)
 
 ---
+We now extend the system to support several additional powerful models for better performance:
 
+- **ResNet-50**: A residual network for improved learning on deeper networks.
+- **VGG-19**: A classic model known for its simplicity and high performance.
+- **NasNetMobile**: A mobile-friendly model for resource-efficient prediction.
+- **DenseNet-121**: Uses dense connections between layers to enhance feature reuse.
+- **InceptionResNetV2**: Combines the strengths of Inception and ResNet architectures.
+- **Unet++**: A more complex U-Net for image segmentation tasks, especially in medical imaging.
+---
 ## 🖼️ Application Interface
 
 Our Streamlit application provides a **user-friendly interface** to classify liver fibrosis stages based on ultrasound images.
@@ -60,7 +68,7 @@ This enables doctors and researchers to quickly and efficiently determine the fi
 
 ---
 
-## 🧠 Backend Code - Liver Fibrosis Classifier
+## 🧠 Deployment Streamlit Code - Liver Fibrosis Classifier
 
 The backend of the liver fibrosis classification application is powered by TensorFlow, Streamlit, and a pre-trained deep learning model. Here is an overview of how the backend works:
 
